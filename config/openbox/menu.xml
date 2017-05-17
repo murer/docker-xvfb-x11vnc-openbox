@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
+<menu id="root-menu" label="Openbox 3">
+  <item label="Run...">
+    <action name="Execute">
+      <command>gmrun</command>
+    </action>
+  </item>
+  <separator/>
+  <item label="Terminal">
+    <action name="Execute">
+      <command>lxterminal</command>
+    </action>
+  </item>
+  <item label="Home">
+    <action name="Execute">
+      <execute>pcmanfm</execute>
+    </action>
+  </item>
+  <separator label="Browser"/>
+  <item label="Chrome">
+    <action name="Execute">
+      <command>google-chrome --no-sandbox</command>
+    </action>
+  </item>
+  <item label="Firefox">
+    <action name="Execute">
+      <command>firefox</command>
+    </action>
+  </item>
+  <separator/>
+  <item label="Logout">
+    <action name="Exit" />
+  </item>
+</menu>
+</openbox_menu>
