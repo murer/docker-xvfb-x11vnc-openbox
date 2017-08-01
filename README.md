@@ -15,5 +15,6 @@ docker run -it -p 5900:5900 --name xvfb-x11vnc-openbox murer/xvfb-x11vnc-openbox
 Connect
 
 ```shell
+# apt-get install xtightvncviewer
 vncviewer localhost:5900
 ```
