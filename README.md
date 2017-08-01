@@ -21,4 +21,4 @@ vncviewer localhost:5900
 
 Default password: ```123```
 
-You can change it here: ```[config/openbox/autostart](https://github.com/murer/docker-xvfb-x11vnc-openbox/blob/master/config/openbox/autostart)```
+You can change it here: [ a config/openbox/autostart ](https://github.com/murer/docker-xvfb-x11vnc-openbox/blob/master/config/openbox/autostart)
