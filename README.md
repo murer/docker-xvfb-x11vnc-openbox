@@ -18,3 +18,6 @@ Connect
 # apt-get install xtightvncviewer
 vncviewer localhost:5900
 ```
+Default password: 123
+
+You can change it here: ```config/openbox/autostart```
