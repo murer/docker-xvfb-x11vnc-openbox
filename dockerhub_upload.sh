@@ -12,3 +12,4 @@ docker login
 docker tag "$DOCKER_IMAGE_NAME" "$DOCKER_IMAGE_NAME:$param_version"
 
 docker push "$DOCKER_IMAGE_NAME:$param_version"
+docker push "$DOCKER_IMAGE_NAME:latest"
