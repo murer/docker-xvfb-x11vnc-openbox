@@ -6,12 +6,17 @@ RUN apt-get update
 
 RUN apt-get install -y wget curl xvfb x11vnc xterm vim \
                        firefox openbox tint2 lxterminal \
-                       gmrun pcmanfm
+                       gmrun pcmanfm sudo
 
-RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
-RUN echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | tee /etc/apt/sources.list.d/google-chrome.list
-RUN apt-get update
-RUN apt-get -y install google-chrome-stable
+ARG PARAM_USER=vncuser
+ARG PARAM_UID=8500
+ARG PARAM_GID=8500
+
+RUN groupadd -g "${PARAM_GID}" "${PARAM_USER}" || true
+RUN adduser --disabled-password --uid "${PARAM_UID}" --gid "${PARAM_GID}" --gecos "${PARAM_USER}" "${PARAM_USER}"
+RUN groupadd -r supersudo
+RUN echo "%supersudo ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/supersudo
+RUN usermod -a -G supersudo "${PARAM_USER}"
 
 ADD config /opt/config
 

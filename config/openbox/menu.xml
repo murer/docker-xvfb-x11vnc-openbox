@@ -18,11 +18,6 @@
     </action>
   </item>
   <separator label="Browser"/>
-  <item label="Chrome">
-    <action name="Execute">
-      <command>google-chrome --no-sandbox</command>
-    </action>
-  </item>
   <item label="Firefox">
     <action name="Execute">
       <command>firefox</command>
