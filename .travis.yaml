@@ -1,0 +1,6 @@
+dist: trusty
+
+jobs:
+  include:
+    - stage: ./build.sh
+    - stage: test
