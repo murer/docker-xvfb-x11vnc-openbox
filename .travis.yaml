@@ -1,4 +1,7 @@
-dist: trusty
+dist: bionic
+sudo: required
+services:
+  - docker
 
 jobs:
   include:
