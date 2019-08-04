@@ -1,9 +1,0 @@
-dist: bionic
-sudo: required
-services:
-  - docker
-
-jobs:
-  include:
-    - stage: ./build.sh
-    - stage: test
