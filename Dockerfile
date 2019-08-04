@@ -4,9 +4,12 @@ MAINTAINER Paulo Murer
 
 RUN apt-get update
 
-RUN apt-get install -y wget curl xvfb x11vnc xterm vim \
-                       firefox openbox tint2 lxterminal \
-                       gmrun pcmanfm sudo
+RUN apt-get install -y sudo wget curl vim
+RUN apt-get install -y xvfb
+RUN apt-get install -y openbox tint2
+RUN apt-get install -y x11vnc
+RUN apt-get install -y firefox
+RUN apt-get install -y xterm lxterminal gmrun pcmanfm
 
 ARG PARAM_USER=vncuser
 ARG PARAM_UID=8500
