@@ -28,7 +28,9 @@ ADD config /opt/config
 RUN chmod +x /opt/config/docker-entrypoint.sh /opt/config/openbox/autostart
 
 RUN rm -rf /etc/xdg/openbox && \
-    cp -R /opt/config/openbox /etc/xdg/openbox
+    cp -R /opt/config/openbox /etc/xdg/openbox && \
+    (rm -rf /etc/xdg/tint2 || true) && \
+    cp -R /opt/config/tint2 /etc/xdg/tint2
 
 USER vncuser
 ENV HOME /home/vncuser
