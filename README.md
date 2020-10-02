@@ -1,24 +1,11 @@
-# Virtual X and VNC server docker image
+# Moved to Hexblade
 
-Build
+https://github.com/murer/hexblade
 
-```shell
-docker build -t murer/xvfb-x11vnc-openbox .
-```
+https://hub.docker.com/repository/docker/murer/hexblade
 
-Run
+So, stop use this project :)
 
-```shell
-docker run -it -p 5900:5900 --name xvfb-x11vnc-openbox murer/xvfb-x11vnc-openbox
-```
+# Old README.md
 
-Connect
-
-```shell
-# apt-get install xtightvncviewer
-vncviewer localhost:5900
-```
-
-Default password: ```123```
-
-You can change it here: [ config/openbox/autostart ](https://github.com/murer/docker-xvfb-x11vnc-openbox/blob/master/config/openbox/autostart)
+https://github.com/murer/docker-xvfb-x11vnc-openbox/blob/master/README_old.md
