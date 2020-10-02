@@ -4,7 +4,7 @@ https://github.com/murer/hexblade
 
 https://hub.docker.com/repository/docker/murer/hexblade
 
-So, stop use this project :)
+I renamed the project and the docker image to get a new fancy name
 
 # Old README.md
 
