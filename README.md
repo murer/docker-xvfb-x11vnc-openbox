@@ -6,7 +6,7 @@ https://hub.docker.com/repository/docker/murer/hexblade
 
 I renamed the project and the docker image to get a new fancy name
 
-[<img src="https://github.com/murer/hexblade/raw/master/docs/HexbladeGitHub.png" width="280" />](https://github.com/murer/hexblade)
+[<img src="https://github.com/murer/hexblade/raw/master/docs/HexbladeGitHub.png" width="480" />](https://github.com/murer/hexblade)
 
 # Old README.md
 
